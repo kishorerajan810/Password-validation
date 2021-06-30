@@ -1,8 +1,6 @@
 s=str(input())
-k=['!','@','#','$','%','&','*']
-p=['1','2','3','4','5','6','7','8','9','0']
-count=0
-count2=0
+k,p=['!','@','#','$','%','&','*'],['1','2','3','4','5','6','7','8','9','0']
+count,count2=0,0
 if len(s) > 7:
     for i in range(len(s)):
         if s[i] in k:
@@ -15,7 +13,6 @@ if len(s) > 7:
             print('Strong')
         else:
             print('Weak')
-
     else:
         print('Weak')
 else:
